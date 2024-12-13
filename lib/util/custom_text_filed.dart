@@ -7,7 +7,9 @@ class CustomTextFormFiled extends StatelessWidget {
     this.hint,
     this.label,
     this.keyboardType,
+    required this.controller,
   });
+  final TextEditingController controller;
   final String? hint;
   final String? label;
   final TextInputType? keyboardType;
@@ -15,6 +17,7 @@ class CustomTextFormFiled extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       decoration: InputDecoration(
         hintText: hint,
         labelText: label,

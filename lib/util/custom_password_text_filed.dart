@@ -2,9 +2,16 @@ import 'package:babylon_task/util/app_fonts.dart';
 import 'package:flutter/material.dart';
 
 class PasswordTextField extends StatefulWidget {
-  const PasswordTextField({super.key, required this.hint, this.label});
+  const PasswordTextField({
+    super.key,
+    required this.hint,
+    this.label,
+    this.controller, 
+  });
+
   final String hint;
   final String? label;
+  final TextEditingController? controller; 
 
   @override
   State<PasswordTextField> createState() => _PasswordTextFieldState();
@@ -16,6 +23,7 @@ class _PasswordTextFieldState extends State<PasswordTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: widget.controller, 
       autocorrect: false,
       obscureText: hidePassword,
       decoration: InputDecoration(

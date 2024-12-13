@@ -1,7 +1,9 @@
+import 'package:babylon_task/auth/cubit/auth_cubit.dart';
 import 'package:babylon_task/splash/splash_view.dart';
 import 'package:babylon_task/util/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -17,13 +19,14 @@ class BabylonApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: AppColors.primary
-      ),
-      debugShowCheckedModeBanner: false,
-      home:const  Scaffold(
-        body: SplashView(),
+    return BlocProvider(
+      create: (context) => AuthCubit(),
+      child: MaterialApp(
+        theme: ThemeData(scaffoldBackgroundColor: AppColors.primary),
+        debugShowCheckedModeBanner: false,
+        home: const Scaffold(
+          body: SplashView(),
+        ),
       ),
     );
   }

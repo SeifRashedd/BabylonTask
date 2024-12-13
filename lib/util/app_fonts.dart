@@ -19,6 +19,18 @@ class AppFonts {
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600);
 
+  static const TextStyle styleSemibold16 = TextStyle(
+      color: Colors.black,
+      fontSize: 16,
+      fontFamily: 'Montserrat',
+      fontWeight: FontWeight.w600);
+
+  static const TextStyle styleSemibold22 = TextStyle(
+      color: Colors.black,
+      fontSize: 22,
+      fontFamily: 'Montserrat',
+      fontWeight: FontWeight.w600);
+
   static const TextStyle styleBold14 = TextStyle(
       color: Colors.black,
       fontSize: 14,
