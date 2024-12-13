@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "46454620028",
+    "project_id": "babylontask",
+    "storage_bucket": "babylontask.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46454620028:android:131a200ed4bb5133b6eef9",
+        "android_client_info": {
+          "package_name": "com.example.babylon_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIbtqP5ikYJLfp3QY_FKzqFDfFqrAjkxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
